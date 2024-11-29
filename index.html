@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Happy Birthday!</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Carta -->
+  <div class="letter-container">
+    <div class="letter">
+      <h1 class="happy-birthday">🎉 Happy Birthday,Thati! 🎉</h1>
+      <img src="https://media.giphy.com/media/xT0xezQGU5xCDJuCPe/giphy.gif" alt="Happy Birthday GIF">
+      <p class="p">Meu Golden,<br>
+      <p class="p">Mais um ano! Encontrar palavras para descrever a nossa amizade é dificil. <br>
+      Nunca pensei que a nossa amizade, que começou tão de leve, se fosse tornar assim, mas ainda bem que sim!
+      Arrancar-te uma garlhada verdadeira é algo de que me orgulho bastante.<br>
+      Sei que este ano tem sido dificil e cheio de mudanças e cansaço, mas ver a tua força perante tudo nunca deixa de me admirar.
+      Espero que um dia te conseguias ver com a força, presença e preserverança que te vejo. <br>
+      Este ano fica um texto pequeno, para ter palavras para os próximos. <br>
+      Obrigada pelos momentos! E obrigada por seres tu!</p>
+    </div>
+  </div>
+
+   <!-- Background Music -->
+  <audio id="birthday-music" autoplay loop>
+    <source src="Devon Cole - I Got You (Lyric Video).mp3" type="audio/mpeg">
+  </audio>
+
+  <!-- Play Button -->
+  <div class="play-button" onclick="toggleMusic()">▶️</div>
+
+  <script>
+    const music = document.getElementById('birthday-music');
+
+    function toggleMusic() {
+      if (music.paused) {
+        music.play();
+      } else {
+        music.pause();
+      }
+    }
+  </script>
+</body>
+</html>

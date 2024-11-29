@@ -1,0 +1,98 @@
+body {
+  font-family: 'Pacifico', cursive, sans-serif;
+  background: linear-gradient(in hsl longer hue 45deg, red 0 0);
+  height: 710px;
+  margin: 0;
+}
+
+.letter-container{
+  margin-top: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  height: 690px;
+  width: 700px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  background: black;
+}
+
+.letter {
+  text-align: center;
+  padding: 20px;
+  color: white;
+}
+
+.p{
+  text-align: justify;
+}
+
+.letter img {
+  max-width: 100%;
+  margin-top: 10px;
+}
+
+.play-button {
+  position: fixed;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #ff4757;
+  color: white;
+  font-size: 20px;
+  padding: 10px 15px;
+  border-radius: 50%;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  user-select: none;
+}
+
+.play-button:hover {
+  background: #ff6b81;
+}
+______________________
+/* Media query for smaller tablets and mobile screens (max-width: 768px) */
+@media (max-width: 768px) {
+  .letter-container {
+    width: 90%; /* Full width with margin */
+    height: auto; /* Flexible height */
+    padding: 10px;
+  }
+
+  .letter img {
+    max-height: 180px; /* Reduce image size */
+  }
+
+  h1.happy-birthday {
+    font-size: 1.8rem; /* Slightly smaller heading */
+  }
+
+  .play-button {
+    font-size: 18px;
+    padding: 8px 12px;
+  }
+}
+
+/* Media query for mobile phones (max-width: 480px) */
+@media (max-width: 480px) {
+  body {
+    font-size: 14px;
+  }
+
+  .letter-container {
+    width: 95%; /* Max width close to screen edge */
+    padding: 8px;
+  }
+
+  h1.happy-birthday {
+    font-size: 1.5rem;
+  }
+
+  .letter img {
+    max-height: 140px; /* Further reduce image for small screens */
+  }
+
+  .play-button {
+    font-size: 16px;
+    padding: 6px 10px;
+  }
+}
